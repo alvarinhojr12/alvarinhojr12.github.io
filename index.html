@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Gerador de Nomes Aleatórios</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Estilos CSS personalizados */
+    .input-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">NickSug</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#nome">Gerador de Nome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#titulo">Gerador de Títulos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#alcunha">Gerador de Alcunhas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="video-title">Digite o título do vídeo:</label>
+        <input type="text" id="video-title" class="form-control" placeholder="Digite o título do vídeo">
+      </div>
+      <div class="text-center">
+        <button onclick="generateVideoTitles()" class="btn btn-primary">Gerar Títulos</button>
+      </div>
+      <div class="text-center mt-3" id="progressor" style="display: none;">
+        <div class="spinner-border text-primary" role="status">
+          <span class="sr-only">Carregando...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-6">
+      <div id="output-section" class="card">
+        <div class="card-body">
+          <!-- O conteúdo gerado será adicionado aqui -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Adicione os links para o Bootstrap no final do seu arquivo HTML -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    
+<div class="container">
+  
+  
+  
+  <h1 class="text-center">Crie Títulos de Vídeos Atraentes com a Ferramenta de Geração de Títulos para o YouTube</h1>
+
+  <div class="card">
+    <div class="card-body">
+      <h2>Como funciona a Ferramenta de Geração de Títulos</h2>
+      <p>Se você é um criador de conteúdo no YouTube, sabe que a escolha de um título impactante para seus vídeos é essencial para atrair a atenção do público. Um título cativante e relevante pode fazer a diferença entre um vídeo que passa despercebido e um que se destaca entre milhões de outros. Para ajudar nessa tarefa, apresentamos a Ferramenta de Geração de Títulos para o YouTube.</p>
+      <h3>Recursos e Benefícios</h3>
+      <ol>
+        <li><strong>Sugestões personalizadas:</strong> A ferramenta utiliza algoritmos inteligentes para analisar o título fornecido e gerar sugestões relevantes e personalizadas. Isso ajuda a evitar títulos genéricos e garante que suas opções sejam específicas para o seu conteúdo.</li>
+        <li><strong>Fontes de inspiração variadas:</strong> A ferramenta utiliza diversas fontes de inspiração para gerar os títulos sugeridos. Isso inclui títulos populares de vídeos do YouTube, tendências atuais, palavras-chave relevantes e muito mais. Dessa forma, você terá acesso a uma ampla gama de ideias para escolher.</li>
+        <li><strong>Economia de tempo:</strong> Ao usar a Ferramenta de Geração de Títulos, você economiza tempo precioso na busca por títulos criativos e impactantes. Em vez de gastar horas pensando em várias opções, a ferramenta faz o trabalho pesado para você, fornecendo sugestões prontas para uso.</li>
+        <li><strong>Aumento de engajamento:</strong> Com títulos atraentes e relevantes, você tem mais chances de atrair a atenção do público e gerar maior engajamento com seus vídeos. Títulos cativantes podem despertar a curiosidade dos espectadores e incentivá-los a clicar, assistir e compartilhar seu conteúdo.</li>
+      </ol>
+      <h2>Como usar a Ferramenta de Geração de Títulos</h2>
+      <ol>
+        <li>Acesse a Ferramenta de Geração de Títulos para o YouTube em [URL_DA_FERRAMENTA].</li>
+        <li>Na caixa de texto fornecida, digite o título desejado para o seu vídeo.</li>
+        <li>Clique no botão "Gerar Títulos".</li>
+        <li>Aguarde alguns segundos enquanto a ferramenta processa as sugestões.</li>
+        <li>Uma lista de títulos sugeridos será exibida na página. Role a página para visualizar todas as opções.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- Adicione os links para o Bootstrap no final do seu arquivo HTML -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+      <!-- Conteúdo do gerador de alcunhas -->
+    </section>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="/politica-privacidade/index.html" class="text-white">Políticas de Privacidade</a>
+        </div>
+        <div class="col">
+          <a href="/service/index.html" class="text-white">Serviços</a>
+        </div>
+        <div class="col">
+          <a href="/service/index.html" class="text-white">Contato</a>
+        </div>
+        <div class="col">
+          <a href="#titulo" class="text-white">Gerador de Títulos</a>
+        </div>
+        <div class="col">
+          <a href="#alcunha" class="text-white">Gerador de Alcunhas</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+  <script>
+    var apiKey = 'AIzaSyCtUwIa4857oFU7LiubernehO_TfjCm9Kk';
+
+    function generateVideoTitles() {
+      var videoTitle = document.getElementById('video-title').value;
+      var outputSection = document.getElementById('output-section');
+      outputSection.innerHTML = '';
+
+      if (videoTitle.trim() === "") {
+        outputSection.innerHTML = "<p>Por favor, digite o título do vídeo.</p>";
+        return;
+      }
+
+      fetchVideoTitles(videoTitle)
+        .then(function (titles) {
+          if (titles.length === 0) {
+            outputSection.innerHTML = "<p>Nenhum título sugerido encontrado.</p>";
+            return;
+          }
+
+          outputSection.innerHTML += "<h3>Sugestões de Títulos:</h3>";
+          for (var i = 0; i < titles.length; i++) {
+            outputSection.innerHTML += "<p>" + titles[i] + "</p>";
+          }
+
+          var titlesString = titles.join(", ");
+          var copyButton = document.createElement('button');
+          copyButton.textContent = "Copiar Títulos";
+          copyButton.addEventListener('click', function() {
+            copyToClipboard(titlesString);
+          });
+          outputSection.appendChild(copyButton);
+        })
+        .catch(function (error) {
+          console.error('Erro ao obter títulos:', error);
+          outputSection.innerHTML = "<p>Ocorreu um erro ao obter títulos. Por favor, tente novamente.</p>";
+        });
+    }
+
+    function fetchVideoTitles(videoTitle) {
+      var apiUrl = 'https://www.googleapis.com/youtube/v3/search';
+      var params = {
+        part: 'snippet',
+        q: videoTitle,
+        type: 'video',
+        maxResults: 5,
+        key: apiKey
+      };
+
+      var url = apiUrl + '?' + encodeParams(params);
+
+      return fetch(url)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          var titles = [];
+          data.items.forEach(function (item) {
+            titles.push(item.snippet.title);
+          });
+          return titles;
+        });
+    }
+
+    function encodeParams(params) {
+      var encodedParams = [];
+      for (var key in params) {
+        encodedParams.push(encodeURIComponent(key) + '=' + encodeURIComponent(params[key]));
+      }
+      return encodedParams.join('&');
+    }
+
+    function copyToClipboard(text) {
+      var textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      alert("Títulos copiados para a área de transferência!");
+    }
+  </script>
+
+
+</body>
+</html>
