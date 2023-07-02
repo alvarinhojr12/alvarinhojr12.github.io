@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerador de Páginas HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Gerador de Páginas HTML</h1>
+
+    <div class="d-flex justify-content-center mt-4">
+      <form id="linkForm">
+        <div class="form-group">
+          <label for="link">Link:</label>
+          <input type="url" class="form-control" id="link" name="link" placeholder="Insira o link" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Gerar Página</button>
+      </form>
+    </div>
+
+    <div class="d-flex justify-content-center mt-4">
+      <p id="generatedLink" style="display: none;"><strong>Link da Página Gerada:</strong> <a id="generatedPageLink" href="#" target="_blank"></a></p>
+    </div>
+  </div>
+
+  <script src="gerar_pagina.js"></script>
+</body>
+  </html>
+            
